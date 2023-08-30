@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input label="Insira o nome do artista para garantir ingresso" labelPlacement="floating"
+    placeholder="Michael Jackson" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Digite seu email" labelPlacement="floating"
+     [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Seu nome" labelPlacement="floating"
+     [(ngModel)]="telefone"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="abrirTela()">Reservar Ingresso</ion-button>
+</ion-content>

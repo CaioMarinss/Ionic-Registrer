@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Verificação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-label><ion-text color="danger">O Artista será: </ion-text>{{nome}}</ion-label><br>
+  <ion-label><ion-text color="danger">Seu email é: </ion-text>{{email}}</ion-label><br>
+  <ion-label><ion-text color="danger">Seu nome é: </ion-text>{{telefone}}</ion-label><br>
+  <ion-label>Suas informações estão corretas?</ion-label><br>
+
+  <ion-button (click)="abrirTelaC()" class="verde" >Confirmar</ion-button>
+
+  <ion-button><a routerLink="/home" class="vermelho" >Voltar</a><br></ion-button>
+</ion-content>
